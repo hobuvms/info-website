@@ -48,7 +48,7 @@ header {
 
 .hc-logo img {
     width: 124px;
-    height: 54px;
+/*    height: 54px;*/
     left: 117px;
     top: 23px;
 }
@@ -57,6 +57,10 @@ header {
     width: 50%;
     float: left;
     padding-top: 10px;
+}
+
+ header ul,footer ul {
+    list-style: none;
 }
 
 .hc-links a {
@@ -300,7 +304,7 @@ footer {
 }
 
 .fc-right {
-    width: 100px;
+    /*width: 100px;*/
     float: right;
 }
 

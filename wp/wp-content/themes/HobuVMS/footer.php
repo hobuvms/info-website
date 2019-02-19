@@ -3,31 +3,29 @@
             <div class="container-box">
                 <div class="fc-left">
                     <div class="fcl-links">
-                        <a href="">Terms & Conditions</a>
-                        <a href="">Privacy Policy</a>
-                        <a href="">About</a>
+                         <?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_class' => 'fcl-links' ) ); ?>
                     </div>
                     <div class="fcl-logo">
-                        <img src="./img/hobu-white.png"/>
-                        <p>
-                            Bluewaves Technologies Pvt. Ltd.
-                            <br/>
-                            COPYRIGHT 2019
-                        </p>
+                        <?php echo get_theme_mod('footer_html'); ?>
                     </div>
                 </div>
                 <div class="fc-right">
                     <div class="fcr-links">
-                        <a href="">Facebook</a>
-                        <a href="">Twitter</a>
-                        <a href="">Instagram</a>
+                         <?php    
+                    $menu_name = 'social-menu'; //menu slug
+                    $locations = get_nav_menu_locations();
+                    $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+                    $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+                    foreach($menuitems as $menuitem){
+                        ?>
+                            <a target="_blank" href="<?php echo $menuitem->url; ?>"><?php echo $menuitem->title ?></a>
+                    <?php } ?>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script>
+<script>
             var Tawk_API = Tawk_API || {},
               Tawk_LoadStart = new Date();
             (function() {
