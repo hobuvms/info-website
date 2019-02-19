@@ -18,7 +18,7 @@
                     $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
                     foreach($menuitems as $menuitem){
                         ?>
-                            <a target="_blank" href="<?php echo $menuitem->url; ?>"><?php echo $menuitem->title ?></a>
+                            <a target="_blank" href="<?php echo $menuitem->url; ?>"><i class="<?php echo implode(" ",$menuitem->classes) ?>"></i></a>
                     <?php } ?>
                     </div>
                 </div>

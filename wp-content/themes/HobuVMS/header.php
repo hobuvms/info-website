@@ -15,12 +15,14 @@ else {
 	// User didn't set a Site Icon, do something else. But still awesome.
     ?>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+    <!-- Fonts icons -->
   <?php
     
 }
   ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri() . '/main.css' ?>" />
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.min.css">
     <script src="<?php echo get_template_directory_uri() . '/main.js' ?>"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
