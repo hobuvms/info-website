@@ -1,4 +1,4 @@
-<footer>
+<footer class="site_footer">
         <div class="container f-container">
             <div class="container-box">
                 <div class="fc-left">

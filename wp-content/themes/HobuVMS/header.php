@@ -20,8 +20,11 @@ else {
     
 }
   ?>
+	<meta name="description" content="<?php echo get_bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri() . '/style.css' ?>" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri() . '/main.css' ?>" />
+    
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.min.css">
     <script src="<?php echo get_template_directory_uri() . '/main.js' ?>"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
