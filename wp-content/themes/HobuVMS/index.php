@@ -14,7 +14,7 @@ get_header(); ?>
                          if (is_blog()) { 
                              
                              ?>
-                    <div class="container">
+                    <div class="container home">
                             <div class="row">
                             <div class="col-sm-12 text-right">
                             <?php 
